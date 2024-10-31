@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-bolierplate",
+  "version": "1.0.0",
+  "description": "Projeto base para as próximas aplicações Node.js",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvelynOliveira1200/nodejs-first-boilerplate.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Bolierplate",
+    "Senai",
+    "Back-end",
+    "Devs"
+  ],
+  "author": "Evelyn Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EvelynOliveira1200/nodejs-first-boilerplate/issues"
+  },
+  "homepage": "https://github.com/EvelynOliveira1200/nodejs-first-boilerplate#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
