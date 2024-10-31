@@ -41,13 +41,22 @@ usuariosRoutes.get("/:id", (req, res) => {
 })
 
 usuariosRoutes.put("/:id", (req, res) => {
+    const {id} = req.params;
+    const {name, email, password} = req.body;
 
+    const user = usersList.updateUser(id, name, email, password);
+
+    if (!user) {
+        return res.status(404).json ({
+            message:  `Usuário com ${id} não encontrado!`
+        })
+    }
+
+    return res.status(200).json ({
+        message:  `Usuário com ${id} foi atualizado com sucesso!`,
+        user,
+    })
 })
-
-usuariosRoutes.delete("/:id", (req, res) => {
-
-})
-
 
 export default usuariosRoutes;
 
