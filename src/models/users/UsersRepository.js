@@ -8,3 +8,5 @@ class UsersRepository {
 
     }
 }
+
+export default UsersRepository;
